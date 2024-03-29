@@ -1,0 +1,34 @@
+.burger-btn {
+    background-color: transparent;
+    // border: none;
+    padding: map-get($spaces, 2 );
+    cursor: pointer;
+    @include border-radius();
+     div{
+        border: 2px solid color(black);
+        width: 25px;
+        margin: map-get($spaces , 1 ); ;
+    }
+}
+.btn{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    border: none;
+    padding: space(2);
+    font-weight: bold;
+    cursor: pointer;
+}
+// defini couleur avec effet hover
+@each $color, $value in $colors{
+    .btn-#{$color} {
+        background-color: $value;
+        &:hover {
+            @include mytrans(.3s);
+            background-color: scale-color($value, $alpha: -30%);
+        }
+    }
+}

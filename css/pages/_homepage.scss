@@ -1,0 +1,196 @@
+// section évènements
+#event-card_container {
+  width: 100%;
+  @include display-grid();
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2em;
+  @include media-breakpoint-up("lg") {
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  }
+  @include media-breakpoint-up("xl") {
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  }
+  @include media-breakpoint-up("xxl") {
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  }
+}
+#events {
+  h2 {
+    font-size: font-size("xxl");
+  }
+  h3 {
+    font-size: font-size("xl");
+  }
+  .event-card {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    margin-bottom: 40px;
+    img {
+      transition: all 0.3s ease-in-out;
+    }
+  }
+  .event-card:hover {
+    img {
+      transform: scale(1.1);
+    }
+  }
+  .event-card_title,
+  .event-card_date {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid black;
+    h3 {
+      margin: 5px 0;
+    }
+  }
+  .event-card_title {
+    position: absolute;
+    bottom: 80px;
+  }
+  .event-card_date {
+    position: absolute;
+    bottom: 0px;
+    span {
+      font-size: font-size("xl");
+      font-weight: bold;
+    }
+    img {
+      margin-right: 5px;
+    }
+  }
+  .arrow {
+    width: 40px;
+  }
+}
+
+// section podcsat
+
+#podcast {
+  .podcast-main-title {
+    h2 {
+      font-size: font-size("xxl");
+    }
+    @include media-breakpoint-up("lg") {
+      @include display-flex();
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+  .podcast-btn {
+    margin: 30px 0;
+    @include media-breakpoint-up("lg") {
+      width: 17%;
+    }
+  }
+  .arrow {
+    width: 40px;
+  }
+  .podcast-container {
+    @include media-breakpoint-up("lg") {
+      @include display-flex();
+      gap: 1em;
+    }
+  }
+  .podcast-container_card {
+    max-width: 600px;
+    overflow: hidden;
+    @include media-breakpoint-up("md") {
+      margin: 20px auto;
+    }
+    .podcast-info-tags,
+    .podcast-tags {
+      font-size: font-size("xs");
+    }
+  }
+  .podcast-container_card-2 {
+    display: none;
+    @include media-breakpoint-up("lg") {
+      display: block;
+    }
+  }
+  .podcast-container_card-3 {
+    display: none;
+    @include media-breakpoint-up("xl") {
+      display: block;
+    }
+  }
+  .podcast-info-tags {
+    margin: 20px 0;
+    @include display-flex();
+    justify-content: space-between;
+    .podcast-tags {
+      font-weight: bold;
+      width: 30%;
+      @include display-flex();
+      justify-content: space-between;
+      @include media-breakpoint-up("xl") {
+        width: 40%;
+      }
+    }
+  }
+  .podcast-title {
+    font-size: font-size("xl");
+  }
+}
+
+
+// section newsletter
+
+#newsletter {
+  .newsletter-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media-breakpoint-up("xl") {
+        border: 1px solid black;
+        width: 70%;
+      }
+  }
+  h2 {
+    font-size: font-size("xxl");
+  }
+  .newsletter_input_cell {
+    display: flex;
+    max-width: 80%;
+    margin-bottom: 30px;
+    input,
+    i {
+      @include padding("all", 0.5em);
+    }
+    input {
+      width: 100%;
+      border: 1p solid black;
+    }
+    i {
+      color: color("white");
+      background-color: color("black");
+    }
+  }
+.newsletter_social-links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media-breakpoint-up("xl") {
+        width: 30%;
+        border: 1px solid black;
+      }
+}
+  .newsletter_social-links_icons {
+    font-size: font-size("xxl");
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    @include media-breakpoint-up("xl") {
+        width: 50%;
+      }
+  }
+  @include media-breakpoint-up("xl") {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+}

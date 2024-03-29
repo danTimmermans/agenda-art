@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Art-Genda</title>
+    <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <script src="js/index.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <a
+        href="index.html"
+        class="nav-icon"
+        aria-label="visit homepage"
+        aria-current="page"
+      >
+        <img src="img/logo-art-genda.webp" alt="foodbuster logo" />
+      </a>
+      <!-- burger menu -->
+      <div class="main-navLinks">
+        <button
+          class="burger"
+          type="button"
+          aria-label="Toggle navigation"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+      <div class="navLinks-container">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="#">Expos</a>
+        <a href="#">Concerts</a>
+        <a class="#">Art Graphiques</a>
+      </div>
+      <div class="user-nav">
+        <div id="main-search-field" class="search-field invisible">
+          <input
+            type="text"
+            id="site-search"
+            name="search"
+            placeholder="Chercher un évènement, une expo,  un concert."
+          />
+          <button type="submit">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </div>
+        <button id="loupe" class="btn search-glass">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button id="conection" class="btn">Se connecter</button>
+      </div>
+    </nav>
+    <!-- champ de recherche ecran < 992 px -->
+    <div id="mobile-search-field" class="mobile-search-field-invisible">
+      <div class="search-field">
+        <input
+          type="text"
+          id="wide-screen-site-search"
+          name="search"
+          placeholder="Chercher un évènement, une expo,  un concert."
+          disabled
+        />
+        <button type="submit">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </div>
+    <!-- header -->
+    <header id="main-header" class="header-section header-section_bg">
+      <div id="title-container" class="title-container">
+        <h1>Activités artistiques - Printemps 2024</h1>
+        <p>
+          "Découvrez le printemps sous un nouveau jour avec notre agenda des
+          activités artistiques 2024 : une célébration vibrante de la créativité
+          et de l'inspiration qui animent cette saison, vous invitant à explorer
+          un monde d'événements captivants et d'expériences inoubliables."
+        </p>
+        <div class="main-title">
+          <a class="btn btn-white main-title_btn">
+            <span>Derniers événements</span>
+            <img
+              class="arrow"
+              src="img/arrows.webp"
+              alt="symbole flèche droite"
+            />
+          </a>
+        </div>
+      </div>
+    </header>
+    <!-- section événements -->
+    <section id="events" class="section-wrapper">
+      <h2>Agenda printanier 2024</h2>
+      <div id="event-card_container">
+        <a class="event-card">
+          <img
+            src="img/collage.webp"
+            alt="image photo collage"
+            width="640"
+            height="427"
+          />
+          <div class="event-card_title btn btn-white main-title_btn">
+            <h3>Lucy Bertrand. Collages</h3>
+          </div>
+          <div class="event-card_date btn btn-white main-title_btn">
+            <span>maintenant</span>
+            <img class="arrow" src="img/arrows.webp" alt="symbole fleche" />
+            <span>21 juillet'24</span>
+          </div>
+        </a>
+        <a class="event-card">
+          <img
+            src="img/abstrait.webp"
+            alt="image peinture abstraite"
+            width="640"
+            height="427"
+          />
+          <div class="event-card_title btn btn-white main-title_btn">
+            <h3>Art abstrait</h3>
+          </div>
+          <div class="event-card_date btn btn-white main-title_btn">
+            <span>20 Mars'24</span>
+            <img class="arrow" src="img/arrows.webp" alt="symbole fleche" />
+            <span>30 Juin'24</span>
+          </div>
+        </a>
+        <a class="event-card">
+          <img
+            src="img/orchestre.webp"
+            alt="photo orchestre symphonique"
+            width="640"
+            height="427"
+          />
+          <div class="event-card_title btn btn-white main-title_btn">
+            <h3>Brahms. Symphonie no 1</h3>
+          </div>
+          <div class="event-card_date btn btn-white main-title_btn">
+            <span>23 Avril'24</span>
+            <img class="arrow" src="img/arrows.webp" alt="symbole fleche" />
+          </div>
+        </a>
+        <a class="event-card">
+          <img
+            src="img/piano.webp "
+            alt="photo jazzman"
+            width="640"
+            height="427"
+          />
+          <div class="event-card_title btn btn-white main-title_btn">
+            <h3>Amarro Diallo Trio</h3>
+          </div>
+          <div class="event-card_date btn btn-white main-title_btn">
+            <h3>01 mai'24</h3>
+            <img class="arrow" src="img/arrows.webp" alt="symbole fleche" />
+          </div>
+        </a>
+      </div>
+    </section>
+    <!-- section intermédiaire -->
+    <section id="inter-1" class="header-section section-inter-1_bg">
+      <div id="title-container" class="title-container">
+        <h2>Exposition art moderne 2024</h2>
+        <p>
+          "Découvrez l'avant-garde de l'expression artistique contemporaine avec
+          notre sélection d'activités artistiques : plongez dans l'univers
+          passionnant de notre exposition d'art moderne, où l'innovation
+          rencontre la créativité pour offrir une expérience immersive unique en
+          son genre."
+        </p>
+        <div class="main-title">
+          <a class="btn btn-white main-title_btn">
+            <span>Derniers événements</span>
+            <img
+              class="arrow"
+              src="img/arrows.webp"
+              alt="symbole flèche droite"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- carrousel -->
+    <section id="carrousel" class="section-wrapper">
+      <div class="carousel">
+        <div class="carousel--wrap">
+          <div class="carousel--item">
+            <figure><img src="img/abstrait.webp"" /></figure>
+            <h3>Art Moderne</h3>
+          </div>
+
+          <div class="carousel--item">
+            <figure><img src="img/collage.jpg" alt="" /></figure>
+            <h3>Expo Photo</h3>
+          </div>
+
+          <div class="carousel--item">
+            <figure><img src="img/header-banner.webp" alt="" /></figure>
+            <h3>Peinture</h3>
+          </div>
+
+          <div class="carousel--item">
+            <figure><img src="img/impressioniste.webp" alt="" /></figure>
+            <h3>Expos Permanentes</h3>
+          </div>
+
+          <div class="carousel--item">
+            <figure><img src="img/jazz.webp" alt="" /></figure>
+            <h3>Jazz</h3>
+          </div>
+
+          <div class="carousel--item">
+            <figure><img src="img/abstrait.webp" alt="" /></figure>
+            <h3>Art au 20 siècle</h3>
+          </div>
+
+          <div class="carousel--item">
+            <figure><img src="img/orchestre.webp" alt="" /></figure>
+            <h3>Classique</h3>
+          </div>
+        </div>
+        <div class="carousel--progress">
+          <div class="carousel--progress-bar"></div>
+        </div>
+      </div>
+    </section>
+    <!-- section podcast -->
+    <section id="podcast" class="section-wrapper">
+      <div class="main-title podcast-main-title">
+        <h2>Regardez, Lisez, écoutez...</h2>
+        <a class="btn btn-grey podcast-btn">
+          <span>Découvrez</span>
+          <img
+            class="arrow"
+            src="img/arrows.webp"
+            alt="symbole flèche droite"
+          />
+        </a>
+      </div>
+      <div class="podcast-container">
+        <div class="podcast-container_card">
+          <div>
+            <img
+              src="img/vilons.webp"
+              alt="photos d'orchestre symphonique section violons"
+            />
+          </div>
+          <div class="podcast-info-tags">
+            <span>Publié le 26 mars '24</span>
+            <div class="podcast-tags">
+              <span><i class="fa-solid fa-check"></i>Classique</span>
+              <span><i class="fa-solid fa-check"></i>Concerts</span>
+            </div>
+          </div>
+          <div class="podcast-title">
+            <h3>Le printemps de Vivaldi</h3>
+            <p>
+              Débutez le printemps en avance avec une interprétation magistrale
+              des quatres saisons
+            </p>
+          </div>
+        </div>
+        <div class="podcast-container_card podcast-container_card-2">
+          <div>
+            <img src="img/lion.webp" alt="photo de collages" />
+          </div>
+          <div class="podcast-info-tags">
+            <span>Publié le 27 mars '24</span>
+            <div class="podcast-tags">
+              <span><i class="fa-solid fa-check"></i>Classique</span>
+              <span><i class="fa-solid fa-check"></i>Concerts</span>
+            </div>
+          </div>
+          <div class="podcast-title">
+            <h3>L'art animalier au cours des siècles</h3>
+            <p>
+              "Découvrez l'évolution de l'art animalier à travers les siècles
+              dans notre exposition immersive."
+            </p>
+          </div>
+        </div>
+        <div class="podcast-container_card podcast-container_card-3">
+          <div>
+            <img src="img/piano.webp" alt="" />
+          </div>
+          <div class="podcast-info-tags">
+            <span>Publié le 28 mars '24</span>
+            <div class="podcast-tags">
+              <span><i class="fa-solid fa-check"></i>Classique</span>
+              <span><i class="fa-solid fa-check"></i>Concerts</span>
+            </div>
+          </div>
+          <div class="podcast-title">
+            <h3>Du Jazz dans le ravin</h3>
+            <p>
+              Plongez dans l'univers envoûtant du jazz avec un hommage
+              inoubliable à Serge Gainsbourg
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section intermédiaire 2-->
+    <section id="inter-1" class="header-section section-inter-2_bg">
+      <div id="title-container" class="title-container">
+        <h2>Organisez vos événements</h2>
+        <p>
+          "Déroulez le tapis rouge pour vos invités et réservez une salle ou
+          emmenez vos partenaires professionnels à un concert ou à travers une
+          expo."
+        </p>
+        <div class="main-title">
+          <a class="btn btn-white main-title_btn">
+            <span>Connectez-vous</span>
+            <img
+              class="arrow"
+              src="img/arrows.webp"
+              alt="symbole flèche droite"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- newsletter -->
+    <section id="newsletter" class="section-wrapper">
+      <div class="newsletter-container">
+        <h2>Abonnez-vous à notre newsletter</h2>
+        <p>
+          Sélectionnez vos centres d'intérêt et recevez les dernières nouvelles
+          directement dans votre boîte mail.
+        </p>
+        <div class="newsletter_input_cell">
+          <input
+            type="email"
+            id="email"
+            pattern=".+@globex\.com"
+            size="30"
+            required
+          />
+          <i class="fa-solid fa-paper-plane"></i>
+        </div>
+      </div>
+      <div class="newsletter_social-links">
+        <h2>Suivez-nous</h2>
+        <div class="newsletter_social-links_icons">
+          <i class="fa-brands fa-square-facebook"></i>
+          <i class="fa-brands fa-square-instagram"></i>
+          <i class="fa-brands fa-square-youtube"></i>
+          <i class="fa-brands fa-spotify"></i>
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <footer id="main-footer">
+      <span>© 2024 Agenda Art.</span>
+      <span
+        ><a href="#">Vie privée</a> | <a href="#">Conditions de vente</a> |
+        <a href="#">Conditions d'utilisation du site web</a> |
+        <a href="#">Politique d'utilisation des cookies</a> |
+        <a href="#">Déposer une plainte</a></span
+      >
+    </footer>
+  </body>
+</html>

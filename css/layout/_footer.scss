@@ -1,0 +1,17 @@
+#main-footer{
+    background-color: color('black');
+    color: color('white');
+    height :20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    span{
+        
+        margin: 20px;
+    }
+    a{
+        color: color('white');
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,13 @@
+@function color($color : "white"){
+    @return map-get($colors , $color );
+};
+// background-color: color("grey");
+
+@function font-size($size : "md"){
+    @return map-get($font-sizes , $size );
+};
+//  font-size: font-size("md");
+@function space($amount : 3){
+    @return map-get($spaces , $amount );
+};
+// padding: space(2);

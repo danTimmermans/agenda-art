@@ -1,0 +1,115 @@
+// transition
+@mixin mytrans ($duree : 5s, $effet : ease-in-out, ){
+    transition: $duree all $effet;
+}
+//  @include mytrans();
+
+// display-grid
+@mixin display-grid{
+    display: grid;
+    display: -ms-grid;
+}
+// @include display-grid();
+
+@mixin display-flex{
+    display: flex;
+}
+// @include display-flex();
+
+// position-fixed
+@mixin fixed($position) {
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+    #{$position} : 0;
+}
+// @include fixed(top);
+
+// border-radius
+@mixin border-radius($type : "all", $radius : $default-radius) {
+    @if($type == "top") {
+        border-radius:  $radius $radius 0 0;
+    }
+    @else if ($type == "left"){
+        border-radius: $radius 0 0 $radius;
+    }
+    @else if ($type == "bottom"){
+        border-radius:  0 0 $radius $radius;
+    }
+    @else if ($type == "right"){
+        border-radius:  0  $radius $radius 0;
+    }
+    @else if ($type == "circle"){
+        border-radius:  50%;
+    }
+    @else{
+        border-radius: $radius;
+    }
+}
+// @include border-radius();
+
+//center
+@mixin center(){
+    display: block;
+    margin: 0 auto;
+}
+// @include center();
+
+// reset
+@mixin reset($type: ""){
+    padding: 0;
+    margin: 0;
+    @if $type == "list"{
+        list-style-type: none;
+    }
+    @if $type == "link" {
+        text-decoration: none;
+    }
+    @if $type == "heading" {
+        font-weight: normal;
+        font-size: $default-font-size;
+    }
+}
+// @include reset()
+
+
+// padding
+@mixin padding($type : "all", $space : $default-space) {
+    @if($type == "top") {
+        padding:   $space 0 0 0;
+    }
+    @else if ($type == "left"){
+        padding:  0  $space 0 0;
+    }
+    @else if ($type == "bottom"){
+        padding:  0 0  $space 0;
+    }
+    @else if ($type == "right"){
+        padding:  0 0 0 $space;
+    }
+    @else{
+        padding: $space;
+    }
+}
+// @include padding("top", );
+
+
+// responsive
+// à partir d'une valeur d'écran
+@mixin media-breakpoint-up($name){
+    @media screen and (min-width : map-get($breakpoints, $name)){
+        @content;
+    }
+} 
+// @include media-breakpoint-up("lg"){
+//     
+// }
+// jusqu'à une valeur d"écran
+@mixin media-breakpoint-down($name){
+    @media screen and (max-width : map-get($breakpoints, $name)){
+       @content; 
+    }
+} 
+// @include media-breakpoint-down("lg"){
+//     
+// }
