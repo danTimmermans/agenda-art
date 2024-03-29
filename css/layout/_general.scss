@@ -25,16 +25,13 @@ img {
 
 // carrousel
 #carrousel {
-  height: 50vh;
+  height: 60vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: "Orelo-sw-bi", serif;
   background: #000;
-  @include media-breakpoint-up("lg") {
-    height: 60vh;
-  }
   @include media-breakpoint-up("xxl") {
     height: 80vh;
   }
