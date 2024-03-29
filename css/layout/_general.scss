@@ -33,7 +33,7 @@ img {
   font-family: "Orelo-sw-bi", serif;
   background: #000;
   @include media-breakpoint-up("xxl") {
-    height: 80vh;
+    height: 70vh;
   }
 }
 
@@ -54,6 +54,12 @@ img {
     width: 70vw;
     padding: 3vw;
     user-select: none;
+    @include media-breakpoint-up("lg") {
+        width: 50vh;
+      }
+    @include media-breakpoint-up("xl") {
+        width: 60vh;
+      }
 
     figure {
       position: relative;
