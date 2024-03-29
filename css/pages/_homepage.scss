@@ -184,6 +184,9 @@
     width: 40%;
     display: flex;
     justify-content: space-between;
+    a{
+        color: color('black');
+    }
     @include media-breakpoint-up("xl") {
         width: 50%;
       }
