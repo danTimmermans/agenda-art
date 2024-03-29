@@ -51,7 +51,7 @@ img {
 
   &--item {
     display: inline-block;
-    width: 70vw;
+    width: 80vw;
     padding: 3vw;
     user-select: none;
     @include media-breakpoint-up("lg") {
