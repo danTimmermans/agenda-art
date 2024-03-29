@@ -121,14 +121,15 @@ nav {
       order: 1;
     }
     .burger {
-      width: 20px;
-      height: 20px;
+      width: 30px;
+      height: 30px;
       cursor: pointer;
       display: flex;
       border: none;
       background: #fafafa;
       align-items: center;
       position: relative;
+      padding: 0;
       span {
         display: block;
         width: 100%;
